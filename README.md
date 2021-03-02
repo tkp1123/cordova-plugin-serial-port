@@ -61,24 +61,6 @@ cordova.plugins.SerialPortPlugin.write('8A',
   });
 ```
 
-#### 写数据然后等返回
-响应数据可能不完整，您可以使用(read)api获取其余信息.
-
-param: 
-- arg1: data
-- arg2: timoutMs
-
-example:
-```
-cordova.plugins.SerialPortPlugin.sendDataAndWaitResponse('8A',1000,
-  res=> {
-        console.log(res);
-        alert(res);
-  },
-  error=> {
-      alert(error);
-  });
-
 ```
 
 #### setHex
